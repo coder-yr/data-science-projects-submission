@@ -182,8 +182,7 @@ Subscription businesses often waste budget targeting customers who would have st
 data-science-projects-submission/
 │
 ├── README.md                                          # Master Portfolio Technical Documentation
-├── start_all.bat                                      # One-click Windows multi-service orchestrator
-├── start_all.ps1                                      # One-click PowerShell multi-service orchestrator
+├── .gitignore                                         # Production exclusion rules
 │
 ├── DS-01-Nationwide-Demand-Forecasting/               # [PROJECT DS-01]
 │   ├── README.md                                      # Comprehensive project documentation (469 lines)
@@ -274,19 +273,14 @@ Both projects leverage modern, high-performance open-source Data Science and ML 
 
 ## 7. Installation & Execution
 
-### Quickstart: Launch All Services (One Command)
+### Launching Web Services
 
 Both platforms use distinct network ports and run simultaneously side-by-side without port contention:
-* **DS-01 FastAPI:** `http://localhost:8000/docs`
-* **DS-01 Dash UI:** `http://localhost:8050`
-* **DS-02 Streamlit:** `http://localhost:8501`
+* **DS-01 FastAPI:** `http://localhost:8000/docs` (Port 8000)
+* **DS-01 Dash UI:** `http://localhost:8050` (Port 8050)
+* **DS-02 Streamlit:** `http://localhost:8501` (Port 8501)
 
-#### Windows (Command Prompt or PowerShell)
-Double-click [`start_all.bat`](start_all.bat) or execute from PowerShell:
-```powershell
-.\start_all.ps1
-```
-The script automatically verifies dependencies, configures environments, and launches all 3 services in independent terminal windows.
+Each project can be launched independently using the commands below.
 
 ---
 

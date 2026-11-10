@@ -51,6 +51,10 @@ data/raw/*.zip
 **/data/processed/*.parquet
 **/data/outputs/*.parquet
 
+# Local launcher scripts
+start_all.bat
+start_all.ps1
+
 # Keep structure and essential data assets
 !**/data/raw/.gitkeep
 !**/data/processed/.gitkeep
@@ -60,3 +64,4 @@ data/raw/*.zip
 
 # Logs
 *.log
+
