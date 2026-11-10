@@ -1,0 +1,62 @@
+# ==============================================================================
+# Root .gitignore for Data Science Projects Submission Portfolio
+# ==============================================================================
+
+# Python Virtual Environments
+.venv/
+*/.venv/
+**/.venv/
+venv/
+*/venv/
+**/venv/
+ENV/
+env/
+
+# Python Bytecode and Caches
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Testing & Coverage
+.pytest_cache/
+*/.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+.env
+*.env
+.env.local
+.env.*.local
+!*.env.example
+!**/.env.example
+
+# IDEs & OS Files
+.vscode/
+.idea/
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Large Raw Datasets (>100MB exceeds GitHub limits)
+data/raw/*.csv
+data/raw/*.zip
+**/data/raw/*.csv
+**/data/raw/*.zip
+**/data/processed/**/*.parquet
+**/data/processed/*.parquet
+**/data/outputs/*.parquet
+
+# Keep structure and essential data assets
+!**/data/raw/.gitkeep
+!**/data/processed/.gitkeep
+!**/data/outputs/.gitkeep
+!**/data/outputs/models/.gitkeep
+!**/data/processed/telco_customer_clv_segmented.csv
+
+# Logs
+*.log
